@@ -7,18 +7,20 @@ import { SuiviService } from 'src/app/service/suivi.service';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
-result: any = '' ;
+resultat: any = '' ;
   constructor(private infoservice: SuiviService) { }
 
   ngOnInit(): void {
+    this.suiviparpays();
   }
     suiviparpays(){
       this.infoservice.getstatistiquepays().subscribe(
       (res) => {
          const temps = res as any;
-         this.result = temps['data'];
-         console.log(this.result);
+         this.resultat = temps['data'];
+         console.log(this.resultat);
       }
     );
 
+}
 }
