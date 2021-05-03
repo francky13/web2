@@ -5,7 +5,7 @@
 export const environment = {
   production: false
 };
-export const url = 'https://fullstackweb2.herokuapp.com/';
+export const url = 'https://wsfullstack.herokuapp.com//';
 
 /*
  * For easier debugging in development mode, you can import the following file
