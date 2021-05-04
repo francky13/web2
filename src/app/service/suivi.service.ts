@@ -21,6 +21,6 @@ export class SuiviService {
     return this.http.get(`${url}/api/suivi/statistiqueJour`);
   }
     getpotiviter(){
-    return this.http.get(`${url}api/suivi/tauxpositiviter`);
+    return this.http.get(`${url}/api/suivi/tauxpositiviter`);
   }
 }

@@ -13,6 +13,7 @@ import { VaccinationComponent } from './vaccination/vaccination.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VaccinationinfoComponent } from './Components/vaccinationinfo/vaccinationinfo.component';
+import { TableauxvacsComponent } from './Components/tableauxvacs/tableauxvacs.component';
 
 
 
@@ -27,7 +28,8 @@ import { VaccinationinfoComponent } from './Components/vaccinationinfo/vaccinati
     InsertioninfoComponent,
     VaccinationComponent,
     LoginComponent,
-    VaccinationinfoComponent
+    VaccinationinfoComponent,
+    TableauxvacsComponent
   ],
   imports: [
     BrowserModule,

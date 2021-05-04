@@ -11,6 +11,7 @@ export class NavigateurComponent implements OnInit {
   constructor(private infoservice: SuiviService) { }
   result: any = '' ;
 
+
   ngOnInit(): void {
     this.list();
   }

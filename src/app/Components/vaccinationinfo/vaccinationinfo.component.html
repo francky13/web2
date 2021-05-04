@@ -1,21 +1,21 @@
 <div class="row">
   <div class="col-md-12">
     <h1 class="page-header">
-      Suivi des tests <small>evolution du corona virus</small>
+      Suivi de vaccins <small>evolution d'injection du vaccins</small>
     </h1>
   </div>
 </div>
 <!-- /. ROW  -->
-<div>
+<div *ngFor="let item of data">
   <div class="row">
     <div class="col-md-3 col-sm-12 col-xs-12">
       <div class="panel panel-primary text-center no-boder bg-color-blue">
         <div class="panel-body">
           <i class="fa fa-users fa-5x"></i>
-          <h3>1222</h3>
+          <h3>{{item.nbr1}}</h3>
         </div>
         <div class="panel-footer back-footer-blue">
-          nouveaux cas
+          premier injection
         </div>
 
       </div>
@@ -24,10 +24,10 @@
       <div class="panel panel-primary text-center no-boder bg-color-blue">
         <div class="panel-body">
           <i class="fa fa-users fa-5x"></i>
-          <h3>15000</h3>
+          <h3>{{item.nbr2}}</h3>
         </div>
         <div class="panel-footer back-footer-blue">
-          forme grave
+          second injection
         </div>
       </div>
     </div>
@@ -36,10 +36,13 @@
   </div>
 </div>
 
-<h2>Protégez-vous et protégez les autres de la COVID-19</h2><br>
-Si la COVID-19 se propage dans votre communauté, protégez-vous en prenant quelques précautions simples, comme maintenir
-une distance physique avec autrui, porter un masque, bien ventiler les pièces, éviter les rassemblements, vous laver les
-mains, et tousser dans votre coude replié ou un mouchoir. Suivez les recommandations locales là où vous vivez et
-travaillez. Faites tout cela !
+La pandémie de COVID-19 qui a frappé le monde bat aujourd’hui son plein. Parallèlement aux actions menées par l’OMS et
+ses partenaires pour riposter à cette pandémie (suivi de la pandémie, conseils sur les interventions essentielles,
+distribution de fournitures médicales vitales à ceux qui en ont besoin), une course aux vaccins a été engagée.
+
+Les vaccins sauvent des millions de vies chaque année. Leur mode d’action consiste à entraîner et à préparer le système
+immunitaire (défenses naturelles de l’organisme) à reconnaître et à combattre les virus et les bactéries qu’ils ciblent.
+Ainsi, si l’organisme se trouve par la suite exposé à ces mêmes agents pathogènes, il est immédiatement prêt à les
+détruire, ce qui permet de prévenir la maladie.
 <br><br>
 

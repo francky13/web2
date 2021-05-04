@@ -1,0 +1,28 @@
+<!-- /. ROW  -->
+<div class="row">
+  <div class="col-md-12">
+    <!-- Advanced Tables -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        suivi par pays
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+            <thead>
+              <tr>
+                <th>premier injection</th>
+                <th>second injection</th>
+                <th>dates</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of data">
+                <td>{{item.nombres}}</td>
+                <td>{{item.nombre2}}</td>
+                <td>{{item.dates}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>

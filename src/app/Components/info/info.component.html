@@ -1,7 +1,4 @@
 <!-- /. ROW  -->
-
-
-
      <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
@@ -31,9 +28,57 @@
                                 </table>
                             </div>
 
+
                         </div>
                     </div>
+                    <h3>Taux de positivité</h3>
+                    <br><br>
+                    Le taux de positivité mesure le pourcentage de cas positifs par rapport au nombre de tests. Principal intérêt: ne pas se
+                    contenter d'un chiffre brut de nouveaux cas, qui risque de monter ou de baisser parce qu'il y a plus ou moins de tests.
+                    A moins de 5% début septembre, ce taux a grimpé jusqu'à 20% ces derniers jours au niveau national.
+
+                    Mais là aussi, attention aux biais. Ce chiffre « ne représente pas la fréquence du portage du virus dans la population
+                    française, mais le portage dans la population testée », qui compte davantage « de personnes symptomatiques et de
+                    personnes contacts de symptomatiques », avertit l'épidémiologiste Catherine Hill.
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h2 class="page-header">
+                            positivité globale
+                          </h2>
+                        </div>
+                      </div>
+                      <!-- /. ROW  -->
+
                     <!--End Advanced Tables -->
                 </div>
-            </div>
+                <div *ngFor="let items of positivites">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                      <div class="panel panel-primary text-center no-boder bg-color-blue">
+                        <div class="panel-body">
+                          <i class="fa fa-users fa-5x"></i>
+                          <h3>{{positivites2}}</h3>
+
+                        </div>
+                        <div class="panel-footer back-footer-blue">
+                          test negative
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                      <div class="panel panel-primary text-center no-boder bg-color-blue">
+                        <div class="panel-body">
+                          <i class="fa fa-users fa-5x"></i>
+                          <h3>{{items.pourcentage}}</h3>
+                        </div>
+                        <div class="panel-footer back-footer-blue">
+                          test positive
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+     </div>
+
 
