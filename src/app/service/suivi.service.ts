@@ -10,7 +10,6 @@ export class SuiviService {
 
   constructor(private http: HttpClient) { }
   getstatistique(){
-
     return this.http.get(`${url}/api/suivi/statistique`);
   }
   // tslint:disable-next-line:typedef
