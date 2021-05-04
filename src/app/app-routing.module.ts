@@ -7,9 +7,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 
 const routes: Routes = [
-  {path: 'Suivi-des-tests', component : WelcomeComponent},
-  {path: 'Actualite', component : ActuComponent},
-  {path: 'Suivi-de-vaccination', component : VaccinationComponent},
+  {path: 'Suivi-des-tests-evolution-positivite', component : WelcomeComponent},
+  {path: 'Actualite-covid-19', component : ActuComponent},
+  {path: 'Suivi-de-vaccination-pays', component : VaccinationComponent},
 
 
 {
